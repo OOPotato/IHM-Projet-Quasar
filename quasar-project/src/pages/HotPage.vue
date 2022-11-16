@@ -5,22 +5,14 @@
     <q-card class="my-card">
       <q-item>
         <q-item-section avatar>
-
-        <q-popup-edit v-model="label2" :cover="false" :offset="[0, 10]" v-slot="scope">
-          <q-input color="accent" v-model="scope.value" dense autofocus counter @keyup.enter="scope.set">
-            <template v-slot:prepend>
-              <q-icon name="record_voice_over" color="accent" />
-            </template>
-          </q-input>
-        </q-popup-edit>
           <q-avatar>
             <img src="https://cdn.quasar.dev/img/avatar1.jpg">
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>maria</q-item-label>
-          <q-item-label caption>so beautiful</q-item-label>
+          <q-item-label>hasa</q-item-label>
+          <q-item-label caption> goal #world cup 2022</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -61,8 +53,8 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>luci</q-item-label>
-          <q-item-label caption>nice photo</q-item-label>
+          <q-item-label>lucien</q-item-label>
+          <q-item-label caption>we do it #world cup 2022</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -105,7 +97,7 @@
 
         <q-item-section>
           <q-item-label>Quantin</q-item-label>
-          <q-item-label caption>so good</q-item-label>
+          <q-item-label caption>nice shoot #world cup 2022</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -158,7 +150,6 @@ export default defineComponent({
         ratingModel5: ref(4),
         ratingModel6: ref(3),
         label: ref('Comment'),
-        label2: ref(''),
 
         name: ref(' '),
         name1: ref(' '),
@@ -193,4 +184,3 @@ export default defineComponent({
   }
 
 </style>
-

@@ -5,22 +5,14 @@
     <q-card class="my-card">
       <q-item>
         <q-item-section avatar>
-
-        <q-popup-edit v-model="label2" :cover="false" :offset="[0, 10]" v-slot="scope">
-          <q-input color="accent" v-model="scope.value" dense autofocus counter @keyup.enter="scope.set">
-            <template v-slot:prepend>
-              <q-icon name="record_voice_over" color="accent" />
-            </template>
-          </q-input>
-        </q-popup-edit>
           <q-avatar>
             <img src="https://cdn.quasar.dev/img/avatar1.jpg">
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>maria</q-item-label>
-          <q-item-label caption>so beautiful</q-item-label>
+          <q-item-label>marine</q-item-label>
+          <q-item-label caption>hahaha</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -61,8 +53,8 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>luci</q-item-label>
-          <q-item-label caption>nice photo</q-item-label>
+          <q-item-label>lucas</q-item-label>
+          <q-item-label caption>happy new year</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -80,7 +72,7 @@
         </q-rating>
       </q-btn-group>
 
-      <q-form @submit="onSubmit" class="q-gutter-md">
+      <q-form @submit="onSubmit" class="q-gutter-md" >
       <q-input
         size="2.5em"
         name="name"
@@ -90,6 +82,7 @@
         filled
         clearable
       />
+
     </q-form>
     </q-card>
     </li>
@@ -104,8 +97,8 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>Quantin</q-item-label>
-          <q-item-label caption>so good</q-item-label>
+          <q-item-label>Queen</q-item-label>
+          <q-item-label caption>i'm love it</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -158,7 +151,6 @@ export default defineComponent({
         ratingModel5: ref(4),
         ratingModel6: ref(3),
         label: ref('Comment'),
-        label2: ref(''),
 
         name: ref(' '),
         name1: ref(' '),
@@ -193,4 +185,3 @@ export default defineComponent({
   }
 
 </style>
-

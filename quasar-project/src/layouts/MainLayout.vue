@@ -11,9 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Accueil
-        </q-toolbar-title>
+
       </q-toolbar>
     </q-header>
 
@@ -62,69 +60,74 @@ const linksList = [
     title: 'Accueil',
     caption: 'quasar.dev',
     icon: 'home',
-    link: 'https://quasar.dev'
+    link: 'http://localhost:8080/#'
   },
-  {
-    title: 'Explorer',
-    caption: 'github.com/quasarframework',
-    icon: 'explore',
-    link: 'https://github.com/quasarframework'
-  },
+  // {
+  //   title: 'Explorer',
+  //   caption: 'github.com/quasarframework',
+  //   icon: 'explore',
+  //   link: 'https://github.com/quasarframework'
+  // },
   {
     title: 'Notification',
     caption: 'chat.quasar.dev',
     icon: 'circle_notifications',
-    link: 'https://chat.quasar.dev'
+    link: 'http://localhost:8080/#/notification'
   },
   {
     title: 'Messages',
     caption: 'forum.quasar.dev',
     icon: 'chat',
-    link: 'https://forum.quasar.dev'
+    link: 'http://localhost:8080/#/messages'
   },
   {
     title: 'Signets',
     caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    icon: 'bookmark',
+    link: 'http://localhost:8080/#/signets'
   },
-  {
-    title: 'Listes',
-    caption: '@QuasarFramework',
-    icon: 'list',
-    link: 'https://facebook.quasar.dev'
-  },
+  // {
+  //   title: 'Listes',
+  //   caption: '@QuasarFramework',
+  //   icon: 'list',
+  //   link: 'https://facebook.quasar.dev'
+  // },
   {
     title: 'Profil',
     caption: 'Community Quasar projects',
     icon: 'account_circle',
-    link: 'https://awesome.quasar.dev'
+    link: 'http://localhost:8080/#/profil'
   },
   {
     title: 'Setting',
     caption: 'Community Quasar projects',
     icon: 'settings',
-    link: 'https://awesome.quasar.dev'
+    link: 'http://localhost:8080/#/sitting'
   }
 ]
 const linksHot = [
   {
     title : 'Learn quasar',
     icon: 'whatshot',
+    link: 'http://localhost:8080/#/hot'
   },
   {
     title : 'Noel',
     icon: 'whatshot',
+    link: 'http://localhost:8080/#/hot'
   },
   {
     title : 'World cup 2022',
     icon: 'whatshot',
+    link: 'http://localhost:8080/#/hot'
   },
   {
-    title : 'Easy to get a ps5 '
+    title : 'Easy to get a ps5 ',
+    link: 'http://localhost:8080/#/hot'
   },
   {
-    title : 'Fire work in Paris'
+    title : 'Fire work in Paris',
+    link: 'http://localhost:8080/#/hot'
   },
 ]
 
