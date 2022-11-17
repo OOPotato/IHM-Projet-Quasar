@@ -1,8 +1,25 @@
 <template>
   <div class="q-pa-md">
     <div class="q-gutter-y-md column" style="width: 400px;left: 45%;position: absolute;">
-
-      <q-input outlined v-model="textname" placeholder="quasar" label="name" />
+      <q-avatar>
+      <img src="https://cdn.quasar.dev/img/avatar.png">
+      </q-avatar>
+      <q-label>change your icon</q-label>
+      <q-file
+        v-model="files"
+        label="Pick files"
+        filled
+        counter
+        :counter-label="counterLabelFn"
+        max-files="3"
+        multiple
+        style="max-width: 300px"
+      >
+        <template v-slot:prepend>
+          <q-icon name="attach_file" />
+        </template>
+      </q-file>
+      <q-input outlined v-model="textname" placeholder="Quasarra" label="name" />
       <q-input outlined v-model="textage" placeholder="20" label="age" />
       <q-input outlined v-model="textphone" placeholder="0660123421" label="phone number" />
       <q-input outlined v-model="textemail" placeholder="quasar@gmail.com" label="email" />
@@ -23,6 +40,9 @@ export default {
       textage: ref(''),
       textphone: ref(''),
       textemail: ref(''),
+      files: ref(null),
+      counterLabelFn ({ totalSize, filesNumber, maxFiles }) {
+        return `${filesNumber} files of ${maxFiles} | ${totalSize}`}
 
 
     }

@@ -44,7 +44,7 @@ export default {
   setup () {
     return {
       onClick () {
-        window.open('http://localhost:8080/#/chat');
+        window.open('http://localhost:8080/#/chat','_self');
 
       }
     }

@@ -2,16 +2,11 @@
   <q-layout view="lhh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
 
-
+    <q-avatar>
+      <img src="https://cdn.quasar.dev/img/avatar.png">
+    </q-avatar>
+    <p style="margin:1%">Quasarra</p>
       </q-toolbar>
     </q-header>
 
@@ -40,7 +35,7 @@
           :key="links.title"
           v-bind="links"
         />
-        <p style="text-align: center;color: blue; cursor: pointer;"> Voir plus</p>
+        <!-- <p style="text-align: center;color: blue; cursor: pointer;"> Voir plus</p> -->
       </q-list>
     </q-drawer>
 
@@ -103,6 +98,12 @@ const linksList = [
     caption: 'Community Quasar projects',
     icon: 'settings',
     link: 'http://localhost:8080/#/sitting'
+  },
+  {
+    title: 'Sign out',
+    caption: 'Community Quasar projects',
+    icon: 'close',
+    link: 'http://localhost:8080/#/login'
   }
 ]
 const linksHot = [
@@ -129,6 +130,19 @@ const linksHot = [
     title : 'Fire work in Paris',
     link: 'http://localhost:8080/#/hot'
   },
+  {
+    title : 'Get a stage easy',
+    link: 'http://localhost:8080/#/hot'
+  },
+  {
+    title : 'New Iphone 100 ',
+    link: 'http://localhost:8080/#/hot'
+  },
+  {
+    title : 'Climat change',
+    link: 'http://localhost:8080/#/hot'
+  },
+
 ]
 
 export default defineComponent({
