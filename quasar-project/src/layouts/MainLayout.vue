@@ -7,6 +7,7 @@
       <img src="https://cdn.quasar.dev/img/avatar.png">
     </q-avatar>
     <p style="margin:1%">Quasarra</p>
+
       </q-toolbar>
     </q-header>
 
@@ -40,6 +41,37 @@
     </q-drawer>
 
     <q-page-container>
+      <div id="box">
+
+    <div class="q-gutter-md">
+      <div class="cursor-pointer" style="width: 100px;text-align: center;">
+        {{ label }}
+        <q-icon name="event" />
+
+        <q-popup-edit v-model="label" class="bg-accent text-white" v-slot="scope">
+          <q-input dark color="white" v-model="scope.value" dense autofocus counter @keyup.enter="scope.set">
+            <template v-slot:append>
+              <q-icon name="edit" />
+            </template>
+          </q-input>
+          <q-input
+              @update:model-value="val => { file = val[0] }"
+              filled
+              type="file"
+        />
+        </q-popup-edit>
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+      </div>
+
       <router-view />
     </q-page-container>
   </q-layout>
@@ -157,6 +189,8 @@ export default defineComponent({
     const leftDrawerOpen = ref(false)
 
     return {
+      file: ref(null),
+      label: ref('Quick post'),
       essentialLinks: linksList,
       hotLinks: linksHot,
       leftDrawerOpen,
@@ -167,4 +201,20 @@ export default defineComponent({
   }
 })
 </script>
+
+<style>
+  #box{
+
+    width: 150px ;
+    height: 40px;
+    margin-left:45%;
+    margin-bottom:3%;
+    margin-top:5%;
+    font-size: 20px;
+    border-radius: 5px;
+
+    color: rgb(108, 115, 183);
+
+  }
+</style>
 
