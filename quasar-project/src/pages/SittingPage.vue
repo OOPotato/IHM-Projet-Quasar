@@ -3,8 +3,8 @@
     <q-toggle
       :label="blueModel"
       color="blue"
-      false-value="Every one can see your photo."
-      true-value="Every one can see your photo"
+      false-value="Anyone can see your photo."
+      true-value="Anyone can see your photo"
       v-model="blueModel"
     />
 
@@ -19,8 +19,8 @@
     <q-toggle
       :label="pinkModel"
       color="blue"
-      false-value="Every one can send you a message."
-      true-value="Every one can send you a message"
+      false-value="Anyone can send you a message."
+      true-value="Anyone can send you a message"
       v-model="pinkModel"
     />
 
@@ -35,16 +35,16 @@
     <q-toggle
       :label="orangeModel"
       color="blue"
-      false-value="Every one can see your profil."
-      true-value="Every one can see your profil"
+      false-value="Anyone can see your profile."
+      true-value="Anyone can see your profile"
       v-model="orangeModel"
     />
 
     <q-toggle
       :label="darkModel"
       color="blue"
-      false-value="Your friends can see your profil."
-      true-value="Your friends can see your profil"
+      false-value="Your friends can see your profile."
+      true-value="Your friends can see your profile"
       v-model="darkModel"
     />
 
@@ -58,12 +58,12 @@ import { ref } from 'vue'
 export default {
   setup () {
     return {
-      blueModel: ref('Every one can see your photo'),
-      pinkModel: ref('Every one can send you a message'),
+      blueModel: ref('Anyone can see your photo'),
+      pinkModel: ref('Anyone can send you a message'),
       greenModel: ref('Your friends can send you a message'),
       redModel: ref('Your friends can see your photo'),
-      orangeModel: ref('Every one can see your profil'),
-      darkModel: ref('Your friends can see your profil')
+      orangeModel: ref('Anyone can see your profile'),
+      darkModel: ref('Your friends can see your profile')
     }
   }
 }

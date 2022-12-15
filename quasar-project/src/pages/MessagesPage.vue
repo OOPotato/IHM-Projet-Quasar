@@ -25,8 +25,8 @@
         </q-avatar>
       </q-item-section>
       <q-item-section>
-        <q-item-label>kary</q-item-label>
-        <q-item-label caption>1 new messages</q-item-label>
+        <q-item-label>Kary</q-item-label>
+        <q-item-label caption>1 new message</q-item-label>
       </q-item-section>
       <q-item-section side>
         10 min ago

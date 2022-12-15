@@ -11,7 +11,7 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>marine</q-item-label>
+          <q-item-label>Marine</q-item-label>
           <q-item-label caption>hahaha</q-item-label>
         </q-item-section>
       </q-item>
@@ -53,7 +53,7 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>lucas</q-item-label>
+          <q-item-label>Lucas</q-item-label>
           <q-item-label caption>happy new year</q-item-label>
         </q-item-section>
       </q-item>
@@ -98,7 +98,7 @@
 
         <q-item-section>
           <q-item-label>Queen</q-item-label>
-          <q-item-label caption>i'm love it</q-item-label>
+          <q-item-label caption>i love it</q-item-label>
         </q-item-section>
       </q-item>
 

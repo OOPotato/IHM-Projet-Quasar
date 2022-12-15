@@ -29,7 +29,7 @@
         />
 
         <q-toolbar-title style="margin-top : 40%;margin-bottom : 8%;text-align: center;">
-          Tendances Now
+          Trending Now
         </q-toolbar-title>
         <HotLink
           v-for="links in hotLinks"
@@ -42,33 +42,6 @@
 
     <q-page-container>
       <div id="box">
-
-    <div class="q-gutter-md">
-      <div class="cursor-pointer" style="width: 100px;text-align: center;">
-        {{ label }}
-        <q-icon name="event" />
-
-        <q-popup-edit v-model="label" class="bg-accent text-white" v-slot="scope">
-          <q-input dark color="white" v-model="scope.value" dense autofocus counter @keyup.enter="scope.set">
-            <template v-slot:append>
-              <q-icon name="edit" />
-            </template>
-          </q-input>
-          <q-input
-              @update:model-value="val => { file = val[0] }"
-              filled
-              type="file"
-        />
-        </q-popup-edit>
-
-
-
-      </div>
-
-
-    </div>
-
-
 
       </div>
 
@@ -96,7 +69,7 @@ const linksList = [
   //   link: 'https://github.com/quasarframework'
   // },
   {
-    title: 'Notification',
+    title: 'Notifications',
     caption: 'chat.quasar.dev',
     icon: 'circle_notifications',
     link: 'http://localhost:8080/#/notification'
@@ -126,7 +99,7 @@ const linksList = [
     link: 'http://localhost:8080/#/profil'
   },
   {
-    title: 'Setting',
+    title: 'Paramètres',
     caption: 'Community Quasar projects',
     icon: 'settings',
     link: 'http://localhost:8080/#/sitting'
@@ -140,12 +113,12 @@ const linksList = [
 ]
 const linksHot = [
   {
-    title : 'Learn quasar',
+    title : 'Learn Quasar',
     icon: 'whatshot',
     link: 'http://localhost:8080/#/hot'
   },
   {
-    title : 'Noel',
+    title : 'Christmas',
     icon: 'whatshot',
     link: 'http://localhost:8080/#/hot'
   },
@@ -159,11 +132,11 @@ const linksHot = [
     link: 'http://localhost:8080/#/hot'
   },
   {
-    title : 'Fire work in Paris',
+    title : 'Fireworks in Paris',
     link: 'http://localhost:8080/#/hot'
   },
   {
-    title : 'Get a stage easy',
+    title : 'Get an internship easily',
     link: 'http://localhost:8080/#/hot'
   },
   {
@@ -203,18 +176,6 @@ export default defineComponent({
 </script>
 
 <style>
-  #box{
 
-    width: 150px ;
-    height: 40px;
-    margin-left:45%;
-    margin-bottom:3%;
-    margin-top:5%;
-    font-size: 20px;
-    border-radius: 5px;
-
-    color: rgb(108, 115, 183);
-
-  }
 </style>
 

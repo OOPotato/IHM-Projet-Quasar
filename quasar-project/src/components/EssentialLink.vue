@@ -14,7 +14,7 @@
 
   <q-item-section>
     <q-item-label>{{ title }}
-      <q-icon v-if="title == 'Messages' || title =='Notification' " name="info" color="blue" />
+      <q-icon v-if="title == 'Messages' || title =='Notifications' " name="info" color="blue" />
     </q-item-label>
   </q-item-section>
 

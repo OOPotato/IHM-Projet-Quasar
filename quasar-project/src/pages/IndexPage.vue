@@ -1,6 +1,33 @@
 <template>
   <q-page class="flex-center">
-  <ul>
+    <div id="box">
+      <div class="q-gutter-md">
+        <div class="cursor-pointer" style="width: 100px;text-align: center;">
+          {{ labelPost }}
+          <q-icon name="event" />
+
+          <q-popup-edit v-model="labelPost" class="bg-accent text-white" v-slot="scope">
+            <q-input dark color="white" v-model="scope.value" dense autofocus counter @keyup.enter="scope.set">
+              <template v-slot:append>
+                <q-icon name="edit" />
+              </template>
+            </q-input>
+            <q-input
+              @update:model-value="val => { file = val[0] }"
+              filled
+              type="file"
+            />
+          </q-popup-edit>
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <ul>
     <li>
     <q-card class="my-card">
       <q-item>
@@ -19,7 +46,7 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>maria</q-item-label>
+          <q-item-label>Maria</q-item-label>
           <q-item-label caption>so beautiful</q-item-label>
         </q-item-section>
       </q-item>
@@ -44,7 +71,7 @@
         name="name"
         v-model="name"
         color="primary"
-        label="comment"
+        label="Comment"
         filled
         clearable
       />
@@ -61,7 +88,7 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>luci</q-item-label>
+          <q-item-label>Luci</q-item-label>
           <q-item-label caption>nice photo</q-item-label>
         </q-item-section>
       </q-item>
@@ -86,7 +113,7 @@
         name="name"
         v-model="name1"
         color="primary"
-        label="comment"
+        label="Comment"
         filled
         clearable
       />
@@ -104,7 +131,7 @@
         </q-item-section>
 
         <q-item-section>
-          <q-item-label>Quantin</q-item-label>
+          <q-item-label>Quentin</q-item-label>
           <q-item-label caption>so good</q-item-label>
         </q-item-section>
       </q-item>
@@ -129,7 +156,7 @@
         name="name"
         v-model="name2"
         color="primary"
-        label="comment"
+        label="Comment"
         filled
         clearable
       />
@@ -151,6 +178,7 @@ export default defineComponent({
   setup (){
       const submitResult = ref([])
       return {
+        labelPost: ref('Quick post'),
         ratingModel: ref(4),
         ratingModel2: ref(3),
         ratingModel3: ref(4),
@@ -192,5 +220,18 @@ export default defineComponent({
     list-style: none;
   }
 
+  #box{
+
+    width: 150px ;
+    height: 40px;
+    margin-left:45%;
+    margin-bottom:3%;
+    margin-top:5%;
+    font-size: 20px;
+    border-radius: 5px;
+
+    color: rgb(108, 115, 183);
+
+  }
 </style>
 

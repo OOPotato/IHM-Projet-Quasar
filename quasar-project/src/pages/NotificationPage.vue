@@ -9,7 +9,7 @@
     >
       <img :src="`https://cdn.quasar.dev/img/avatar${n + 1}.jpg`">
     </q-avatar>
-      <q-item-label style="position:absolute;left:33%;top:8%">are like your photo</q-item-label>
+      <q-item-label style="position:absolute;left:540px;top:70px">liked your photo</q-item-label>
 
     <q-item clickable v-ripple>
       <q-item-section side>
@@ -20,7 +20,7 @@
       </q-item-section>
       <q-item-section>
         <q-item-label>Marry</q-item-label>
-        <q-item-label caption>Write down a comment: It's very good</q-item-label>
+        <q-item-label caption>Wrote a comment: It's very good</q-item-label>
       </q-item-section>
       <q-item-section side>
         3 min ago
@@ -36,7 +36,7 @@
       </q-item-section>
       <q-item-section>
         <q-item-label>kary</q-item-label>
-        <q-item-label caption>Write down a comment : Wonderful</q-item-label>
+        <q-item-label caption>Wrote a comment : Wonderful</q-item-label>
       </q-item-section>
       <q-item-section side>
         12 min ago

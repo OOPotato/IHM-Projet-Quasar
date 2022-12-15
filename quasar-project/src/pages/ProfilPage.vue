@@ -4,7 +4,7 @@
       <q-avatar>
       <img src="https://cdn.quasar.dev/img/avatar.png">
       </q-avatar>
-      <q-label>change your icon</q-label>
+      <q-label>Change your image profile</q-label>
       <q-file
         v-model="files"
         label="Pick files"
@@ -19,10 +19,10 @@
           <q-icon name="attach_file" />
         </template>
       </q-file>
-      <q-input outlined v-model="textname" placeholder="Quasarra" label="name" />
-      <q-input outlined v-model="textage" placeholder="20" label="age" />
-      <q-input outlined v-model="textphone" placeholder="0660123421" label="phone number" />
-      <q-input outlined v-model="textemail" placeholder="quasar@gmail.com" label="email" />
+      <q-input outlined v-model="textname" placeholder="Quasarra" label="Name" />
+      <q-input outlined v-model="textage" placeholder="20" label="Age" />
+      <q-input outlined v-model="textphone" placeholder="0660123421" label="Phone number" />
+      <q-input outlined v-model="textemail" placeholder="quasar@gmail.com" label="Email" />
       <q-btn push color="white" text-color="primary" label="Submit" />
     </div>
   </div>
